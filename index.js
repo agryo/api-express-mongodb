@@ -1,11 +1,16 @@
-/* Configuração inicial */
-// Importação UserDB
-const UserDB = require('./crypt/UserDB.js')
+/*
+----------------------------
+    Configuração inicial
+----------------------------
+*/
 
+// Importação UserDB
+const UserDB = require('./crypt/UserDB')
 // Importação do Express
 const express = require('express')
 // Importação do Mongoose
 const mongoose = require('mongoose')
+
 // Executar o Express (Inicializar)
 const app = express()
 
@@ -16,8 +21,14 @@ app.use(
         extended: true
     })
 )
-
+// O Express irá utilizar JSON para pedidos e respostas
 app.use(express.json())
+
+/* Rotas da API */
+// Importando a Rota
+const personRoutes = require('./routes/personRoutes')
+// Usando a Rota
+app.use('/person', personRoutes)
 
 /* Rota Inicial / endpoint */
 app.get('/', (rec, res) => {
