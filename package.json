@@ -8,7 +8,7 @@
     "start": "nodemon ./index.js localhost 3000"
   },
   "keywords": [],
-  "author": "Agryo <agryostallion@gmail.com> (http://agryo.cruzeta.com.br/)",
+  "author": "Agryo <agryostallion@gmail.com> (https://agryo.cruzeta.com.br/)",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
