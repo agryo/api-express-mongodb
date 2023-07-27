@@ -11,7 +11,7 @@ const express = require('express')
 // Importação do Mongoose
 const mongoose = require('mongoose')
 
-// Executar o Express (Inicializar)
+// Executar o Express (Inicializar).
 const app = express()
 
 /* Forma de ler o JSON */
